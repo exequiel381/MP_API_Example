@@ -2,7 +2,9 @@
 <!-- git config --global http.sslVerify false -->
 <!-- npm install express -->
 <!-- npm install -D nodemon  y agregamos al package .json video 3  min 7 -->
+<!-- npm run watch -->
 <!-- npm install mercadopago -->
+<!-- npm i body-parser -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,9 @@
     <div class="container">
         <h2>Producto</h2>
         <div class="row">
-            <form action="">
+            <form action="http://localhost:3000/checkout" method="POST">
+                <input type="hidden" name="title" value="Remera">
+                <input type="hidden" name="unit_price" value="1">
                 <input type="submit" value="Comprar ahora">
             </form>
         </div>
