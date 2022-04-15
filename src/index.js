@@ -50,7 +50,7 @@ app.post("/checkout/item", (req, res) => {
   let preference = {
     items: [
       {
-        id: "34", //req.query.id;,
+        id: "34", //req.query.id,
         title: "nada", //req.query.title,
         unit_price: parseInt("1"), //parseInt(req.query.unit_price),
         quantity: 1, //req.query.quantity,
